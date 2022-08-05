@@ -1,7 +1,7 @@
 {
     "name": "Ocasta Bypass",
     "description": "Chrome Extension for Project Ocasta's Webproxy",
-    "version": "1.0",
+    "version": "1.0.1",
     "omnibox": {
         "keyword": "bypass"
     },
