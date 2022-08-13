@@ -15,6 +15,19 @@ chrome.omnibox.onInputEntered.addListener(function (text) {
         url = "https://www.google.com/search?q=" + text;
     }
 
-    // Open new tab with url
-    chrome.tabs.create({ url: "https://browse.projectocasta.org/main/" + url });
+    // Encoding Settings
+    chrome.storage.sync.get({
+        encoding: 'default'
+    }, function (items) {
+        switch (items.encoding) {
+            // Open requested URL
+            case 'default':
+                chrome.tabs.create({ url: "https://browse.projectocasta.org/main/" + url });
+                break;
+            case 'b64':
+                url = btoa(url);
+                chrome.tabs.create({ url: "https://dev.browse.projectocasta.org/b64/" + url });
+                break;
+        }
+    });
 });
