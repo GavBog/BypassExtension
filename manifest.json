@@ -1,34 +1,32 @@
 {
-    "name": "Ocasta Bypass",
-    "description": "Chrome Extension for Project Ocasta's Webproxy",
-    "version": "1.0.1",
-    "omnibox": {
-        "keyword": "bypass"
-    },
-    "manifest_version": 3,
-    "options_page": "src/options.html",
-    "background": {
-        "service_worker": "src/background.js"
-    },
-    "action": {
-        "default_icon": {
-            "16": "src/assets/icons/icon16.png",
-            "24": "src/assets/icons/icon24.png",
-            "32": "src/assets/icons/icon32.png",
-            "48": "src/assets/icons/icon48.png",
-            "64": "src/assets/icons/icon64.png",
-            "128": "src/assets/icons/icon128.png"
-        }
-    },
-    "icons": {
-        "16": "src/assets/icons/icon16.png",
-        "24": "src/assets/icons/icon24.png",
-        "32": "src/assets/icons/icon32.png",
-        "48": "src/assets/icons/icon48.png",
-        "64": "src/assets/icons/icon64.png",
-        "128": "src/assets/icons/icon128.png"
-    },
-    "permissions": [
-        "storage"
-    ]
+  "name": "Ocasta Bypass",
+  "description": "Chrome Extension for Project Ocasta's Webproxy",
+  "version": "1.0.1",
+  "omnibox": {
+    "keyword": "bypass"
+  },
+  "manifest_version": 3,
+  "options_page": "src/options.html",
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "src/assets/icons/icon16.png",
+      "24": "src/assets/icons/icon24.png",
+      "32": "src/assets/icons/icon32.png",
+      "48": "src/assets/icons/icon48.png",
+      "64": "src/assets/icons/icon64.png",
+      "128": "src/assets/icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "src/assets/icons/icon16.png",
+    "24": "src/assets/icons/icon24.png",
+    "32": "src/assets/icons/icon32.png",
+    "48": "src/assets/icons/icon48.png",
+    "64": "src/assets/icons/icon64.png",
+    "128": "src/assets/icons/icon128.png"
+  },
+  "permissions": ["storage"]
 }
